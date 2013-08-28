@@ -1,5 +1,5 @@
 {
-  "name": "pmq",
+  "name": "submq",
   "version": "0.0.0",
   "description": "Aggregate zmq subscribers accross a process",
   "main": "index.js",

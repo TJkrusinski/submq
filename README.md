@@ -1,28 +1,30 @@
-# pmq
+# submq
 
 Aggregate subscriptions to ZeroMQ accross your process.
+
+`$ npm install pubmq`
 
 ## Interface
 
 ```
-var pmq = require('pmq');
+var submq = require('submq');
 
-pmq.connect('tcp://127.0.0.1:8080');
+submq.connect('tcp://127.0.0.1:8080');
 
 // increments subscriber count for `foobar` by 1 or starts subscribing
-pmq.subscribe('foobar');
+submq.subscribe('foobar');
 
-pmq.on('message', function(mes){
+submq.on('message', function(mes){
 	console.log(typeof mes); // object (buffer)
 	console.log(mes.toString());
 });
 
-pmq.on('error', function(e){
+submq.on('error', function(e){
 	// handle me
 });
 
 // lowers subscriber count for `foobar` by 1 or unsubscribes
-pmq.unsubscribe('foobar'); 
+submq.unsubscribe('foobar'); 
 
 ```
 
