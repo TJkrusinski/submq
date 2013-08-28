@@ -11,7 +11,6 @@ var socket = zmq.socket('sub');
  */
 var pmq = Object.create(new events.EventEmitter);
 
-
 /**
  *	Reference to subscriptions
  *	@property subscriptions
@@ -74,7 +73,6 @@ socket.on('error', function(d){
 });
 
 socket.on('message', function(d){
-	console.log('foo');
 	pmq.emit('message', d);
 });
 

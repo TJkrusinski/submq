@@ -18,5 +18,8 @@
   "license": "BSD",
   "dependencies": {
     "zmq": "~2.5.1"
+  },
+  "devDependencies": {
+    "chai": "~1.7.2"
   }
 }
