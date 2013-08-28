@@ -1,0 +1,22 @@
+{
+  "name": "pmq",
+  "version": "0.0.0",
+  "description": "Aggregate zmq subscribers accross a process",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": "",
+  "keywords": [
+    "zmq",
+    "zeromq"
+  ],
+  "author": "TJ Krusinski",
+  "license": "BSD",
+  "dependencies": {
+    "zmq": "~2.5.1"
+  }
+}
