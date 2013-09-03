@@ -2,7 +2,7 @@
 
 Aggregate subscriptions to ZeroMQ accross your process.
 
-`$ npm install pubmq`
+`$ npm install submq`
 
 ## Interface
 
