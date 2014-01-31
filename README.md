@@ -6,7 +6,7 @@ Aggregate subscriptions to ZeroMQ accross your process.
 
 ## Interface
 
-```
+```javascript
 var submq = require('submq');
 
 submq.connect('tcp://127.0.0.1:8080');
@@ -27,6 +27,8 @@ submq.on('error', function(e){
 submq.unsubscribe('foobar'); 
 
 ```
+
+The raw `zmq` socket is at `submq._socket`.
 
 ## Running tests
 

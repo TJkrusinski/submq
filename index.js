@@ -4,7 +4,7 @@ var zmq = require('zmq'),
 	events = require('events'),
 	subs = {};
 
-var socket = zmq.socket('sub');
+var socket = exports._socket = zmq.socket('sub');
 
 /**
  *	Interface
