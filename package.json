@@ -1,6 +1,6 @@
 {
   "name": "submq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Aggregate zmq subscribers accross a process",
   "main": "index.js",
   "directories": {
